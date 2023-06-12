@@ -20,3 +20,11 @@ model.add(Conv2D(filters=120, kernel_size=5, strides=1, activation='tanh', input
 
 model.add(Flatten())
 
+
+#FC6 Fully Conencted layer
+model.add(Dense(units=84, activation='tanh'))
+
+#FC7 Fully Connected layer
+model.add(Dense(units=10, activation='softmax'))
+
+model.summary()
